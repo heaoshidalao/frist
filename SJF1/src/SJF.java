@@ -1,7 +1,7 @@
 import java.text.DecimalFormat;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Scanner;
+        import java.util.LinkedList;
+        import java.util.List;
+        import java.util.Scanner;
 
 class Process{
     public int arrivalTime;
@@ -30,10 +30,10 @@ public class SJF{
             int arrTime = scanner.nextInt();
             int serviceTime = scanner.nextInt();
             String Name = scanner.next();
-           p[i]= new Process(arrTime,serviceTime,Name);
+            p[i]= new Process(arrTime,serviceTime,Name);
         }
-                Process[] processes=SJF(p);
-                Out(processes);
+        Process[] processes=SJF(p);
+        Out(processes);
     }
     public static void Out(Process[] p){
         DecimalFormat df = new DecimalFormat("#.00");
